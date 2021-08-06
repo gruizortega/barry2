@@ -1,0 +1,104 @@
+<!DOCTYPE html> 
+
+<!--[if lt IE 7]>
+<html lang='en' class='ie_6 ie_lte8'></html><![endif]-->
+<!--[if IE 7]>
+<html lang='en' class='ie_7 ie_lte8'></html><![endif]-->
+<!--[if IE 8]>
+<html lang='en' class='ie_8 ie_lte8'></html><![endif]-->
+<!-- [if gt IE 8] <!-->
+<html lang='en'><!-- <![endif]-->
+
+
+<head>
+
+	<meta charset='utf-8' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+
+	<meta name='description' content='Barry Wolf represents clients in civil appellate litigation. He has been practicing appellate law for over 20 years, and is certified as an appellate specialist by the California State Bar.' /> 
+	<meta name='keywords' content= 'barry, wolf, barry wolf, law, office, appellate, appeal, attorney, lawyer, california, la, los angeles' /> 
+	<meta name='google-site-verification' content='lQOasSeSdlpgSYN17l8B4R5dV0n_SdnJ1fHpIrHtvJM' />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:400,700italic,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='.//public/docs/css/screen.css' type='text/css' media='screen'>
+	<link rel='shortcut icon' href='.//public/images/favicon.png'></link>
+
+	<title>Law Office of Barry M. Wolf</title>
+
+		
+</head>
+
+
+
+
+<body class='page-home'>
+
+	
+	<span class='topspacer'></span>
+
+	<a class='logo' href='./'>
+		<img src='.//public/images/header-new.png' alt='Law Office of Barry M. Wolf'/>
+	</a>
+
+	<div class='menu js-menu'>
+		<div class='membrane'>
+			<a class='menu-home menuitem' href='./'>Home</a>
+							<a class='menu-questions menuitem ' href='./questions/'>Questions</a>
+							<a class='menu-briefs menuitem ' href='./briefs/'>Representative Appellate Briefs</a>
+							<a class='menu-decisions menuitem ' href='./decisions/'>Published Decisions</a>
+							<a class='menu-contact menuitem last' href='./contact/'>Contact</a>
+					</div>
+	</div>
+
+	<div class='menu fixie js-fixie-menu' style='display: none'>
+		<div class='membrane'>
+			<a class='menu-home menuitem' href='./'>Home</a>
+							<a class='menu-questions menuitem ' href='./questions/'>Questions</a>
+							<a class='menu-briefs menuitem ' href='./briefs/'>Representative Appellate Briefs</a>
+							<a class='menu-decisions menuitem ' href='./decisions/'>Published Decisions</a>
+							<a class='menu-contact menuitem last' href='./contact/'>Contact</a>
+					</div>
+	</div>
+	
+	<div class='content'>
+											<img class='portrait' src='./content/index/photo.jpg' alt='Barry Wolf' />
+					
+		<h3>About Me</h3>
+
+<p>I have practiced appellate law for more than 20 years.  I began practicing appellate law with a firm that specializes in this area.  After approximately 10 years with that firm, I left to start my own practice.</p>
+
+<p>I graduated from Georgetown University Law Center and am licensed in the District of Columbia and Virginia, as well as in California.  I have also been admitted to several federal court bars, including the Ninth Circuit Court of Appeals (which hears appeals from California federal courts) and the United States Supreme Court.  I am a member of the Los Angeles County Bar Association.</p>
+
+<p>I have received awards for pro bono work from the Anti-Defamation League and the Los Angeles Society for Prevention of Cruelty to Animals.</p>
+
+<h3>About My Practice</h3>
+
+<p>I represent clients only in civil appellate litigation, although I will consult with attorneys regarding matters that may arise in earlier stages of litigation, including dispositive motions, evidentiary issues, jury instructions, verdict forms and post-trial matters.<br>
+ I represent clients in appellate cases involving contracts, employment matters, real property, family law, personal injuries, decedent's estates and appeals from administrative proceedings. I represent both plaintiffs and defendants except in employment law matters, in which I generally represent plaintiffs. I also do some insurance defense work. I take only cases that I think have legal merit; I never accept a case simply to earn a fee.  Once I am retained by a client, I make sure I have sufficient time to devote to that client's appeal even if it means turning away other work.  I attempt to provide the best representation possible in order to maximize my client's chances of winning or securing a favorable settlement.</p>
+
+	</div>
+
+
+	<div class='footer'>
+	</div>
+
+
+	<script type='text/javascript' src='.//public/docs/js/jquery-1.11.1.min.js'></script>
+	<script type='text/javascript' src='.//public/docs/js/fixieheader.js'></script>
+
+	
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-18771663-1']); _gaq.push(['_trackPageview']);
+	
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	
+</body>
+	
+</html>

@@ -1,0 +1,93 @@
+{% extends "default.html" %}
+
+{% block extrahead %}
+	<script type='text/javascript' src='http://maps.google.com/maps/api/js?sensor=false'></script> 
+	
+	<script>
+		function initializemap() {
+		var theStyle = [
+			{
+			 featureType: "all",
+			elementType: "all",
+			stylers: [
+				{ saturation: -25 },
+				{ lightness: 9 },
+				{ hue: "#323E49" }
+			]
+			},{
+			featureType: "road",
+			elementType: "all",
+			stylers: [
+				{ hue: "#A05D1A" }
+			]
+			}
+		];
+		
+		var myLatlng = new google.maps.LatLng(34.039734,-118.438733);
+		var myOptions = {
+		zoom: 15,
+		center: myLatlng,
+		panControl: false,
+		zoomControl: true,
+		mapTypeControl: false,
+		scaleControl: false,
+		streetViewControl: false,
+		overviewMapControl: false,
+		scrollwheel: false,
+			mapTypeControlOptions: {
+				 mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'barry']
+			}
+		}
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+		
+		var marker = new google.maps.Marker({
+			position: myLatlng, 
+			map: map,
+			title:"Law Office of Barry M. Wolf"
+		});
+		
+		
+		var styledMapOptions = {
+			name: "Barry"
+		}
+		
+		var barryMapType = new google.maps.StyledMapType(
+			theStyle, styledMapOptions);
+		
+		map.mapTypes.set('barry', barryMapType);
+		map.setMapTypeId('barry');
+		
+		}
+
+		window.onload = function(){
+			initializemap();
+		};
+	
+	</script>
+{% endblock %}
+
+
+{% block content %}
+		<div id='map_canvas' class='map-canvas'>
+		</div>
+	
+		<div class='map-info'>  
+			<h3>Contact Information</h3>
+			
+			<div class='map-float'>
+				<p>Barry M. Wolf<br/>
+				Law Office of Barry M. Wolf<br />
+				11150 Olympic Boulevard, Suite 1050<br />
+				Los Angeles, CA 90064<br /><br /></p>
+			</div>
+			<div class='map-float'>
+				<p>
+					<em>Phone:</em> {{ page.phone }}<br />
+					<em>Fax:</em> {{ page.fax }}<br />
+					<em>Email:</em> <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+				</p>
+			</div>
+		</div>
+		
+		<span class='clearfix'></span>
+{% endblock %}

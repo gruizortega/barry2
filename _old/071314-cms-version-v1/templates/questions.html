@@ -1,0 +1,108 @@
+{% extends "default.html" %}
+
+{% block content %}
+	{% if page.page_title %}
+		<h1>{{ page.page_title }}</h1>
+	{% endif %}
+
+	{% if page.question1_question %}<a href='#1'>{{ page.question1_question|striptags }}</a><br />{% endif %}
+	{% if page.question2_question %}<a href='#2'>{{ page.question2_question|striptags }}</a><br />{% endif %}
+	{% if page.question3_question %}<a href='#3'>{{ page.question3_question|striptags }}</a><br />{% endif %}
+	{% if page.question4_question %}<a href='#4'>{{ page.question4_question|striptags }}</a><br />{% endif %}
+	{% if page.question5_question %}<a href='#5'>{{ page.question5_question|striptags }}</a><br />{% endif %}
+	{% if page.question6_question %}<a href='#6'>{{ page.question6_question|striptags }}</a><br />{% endif %}
+	{% if page.question7_question %}<a href='#7'>{{ page.question7_question|striptags }}</a><br />{% endif %}
+	{% if page.question8_question %}<a href='#8'>{{ page.question8_question|striptags }}</a><br />{% endif %}
+	{% if page.question9_question %}<a href='#9'>{{ page.question9_question|striptags }}</a><br />{% endif %}
+	{% if page.question10_question %}<a href='#10'>{{ page.question10_question|striptags }}</a><br />{% endif %}
+	{% if page.question11_question %}<a href='#11'>{{ page.question11_question|striptags }}</a><br />{% endif %}
+	{% if page.question12_question %}<a href='#12'>{{ page.question12_question|striptags }}</a><br />{% endif %}
+
+	<a name='1'></a>
+
+	<hr />
+
+	{% if page.question1_question %}
+		<strong>{{ page.question1_question }}</strong>
+		{{ page.question1_answer }}
+	{% endif %}
+
+	{% if page.question2_question %}
+		<a name='2'></a>
+		<hr />
+		<strong>{{ page.question2_question }}</strong>
+		{{ page.question2_answer }}
+	{% endif %}
+
+	{% if page.question3_question %}
+		<a name='3'></a>
+		<hr />
+		<strong>{{ page.question3_question }}</strong>
+		{{ page.question3_answer }}
+	{% endif %}
+
+	{% if page.question4_question %}
+		<a name='4'></a>
+		<hr />
+		<strong>{{ page.question4_question }}</strong>
+		{{ page.question4_answer }}
+	{% endif %}
+
+	{% if page.question5_question %}
+		<a name='5'></a>
+		<hr />
+		<strong>{{ page.question5_question }}</strong>
+		{{ page.question5_answer }}
+	{% endif %}
+
+	{% if page.question6_question %}
+		<a name='6'></a>
+		<hr />
+		<strong>{{ page.question6_question }}</strong>
+		{{ page.question6_answer }}
+	{% endif %}
+
+	{% if page.question7_question %}
+		<a name='7'></a>
+		<hr />
+		<strong>{{ page.question7_question }}</strong>
+		{{ page.question7_answer }}
+	{% endif %}
+
+	{% if page.question8_question %}
+		<a name='8'></a>
+		<hr />
+		<strong>{{ page.question8_question }}</strong>
+		{{ page.question8_answer }}
+	{% endif %}
+
+	{% if page.question9_question %}
+		<a name='9'></a>
+		<hr />
+		<strong>{{ page.question9_question }}</strong>
+		{{ page.question9_answer }}
+	{% endif %}
+
+	{% if page.question10_question %}
+		<a name='10'></a>
+		<hr />
+		<strong>{{ page.question10_question }}</strong>
+		{{ page.question10_answer }}
+	{% endif %}
+
+	{% if page.question11_question %}
+		<a name='11'></a>
+		<hr />
+		<strong>{{ page.question11_question }}</strong>
+		{{ page.question11_answer }}
+	{% endif %}
+
+	{% if page.question12_question %}
+		<a name='12'></a>
+		<hr />
+		<strong>{{ page.question12_question }}</strong>
+		{{ page.question12_answer }}
+	{% endif %}
+
+    {{ page.content }}
+{% endblock %}

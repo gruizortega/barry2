@@ -1,0 +1,11 @@
+{% extends "default.html" %}
+
+{% block content %}
+		{% for image in page.images %}
+			{% if loop.first %}
+				<img class='portrait' src='{{ image.url }}' alt='Barry Wolf' />
+			{% endif %}
+		{% endfor %}
+
+		{{ page.content }}
+{% endblock %}

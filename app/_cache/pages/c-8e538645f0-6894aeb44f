@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+          <url>
+        <loc>http://www.wolfappeals.com/</loc>
+        <lastmod>2014-09-06T02:55:13+10:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+        <url>
+    <loc>http://www.wolfappeals.com/questions/</loc>
+    <lastmod>2014-07-12T06:45:25+10:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>          <url>
+    <loc>http://www.wolfappeals.com/briefs/</loc>
+    <lastmod>2014-07-12T06:46:39+10:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>          <url>
+    <loc>http://www.wolfappeals.com/decisions/</loc>
+    <lastmod>2014-07-12T06:46:06+10:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>          <url>
+    <loc>http://www.wolfappeals.com/contact/</loc>
+    <lastmod>2014-07-12T06:46:31+10:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+</url>      </urlset>

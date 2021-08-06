@@ -1,0 +1,259 @@
+@import url('reset.css');
+
+html {
+	overflow: -moz-scrollbars-vertical;
+	overflow-y: scroll;
+}
+
+body {
+	text-align: center;
+	font: 15px/30px "Merriweather",Georgia, Times, Times New Roman, serif;
+	color: #323E49;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+
+h1,
+h2,
+h3 {
+	font: 24px/24px "Lato", sans-serif;
+	font-weight: 700;
+	color: #323E49;
+	display: block;
+	margin-bottom: 25px;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	letter-spacing: 2px;
+	text-rendering: auto;
+}
+
+p {
+	display: block;
+	margin-bottom: 18px;
+}
+
+p + h1,
+p + h3,
+p + h3 {
+	margin-top: 100px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+.topspacer {
+	display: block;
+	height: 80px;
+}
+@media screen and (max-width: 740px) {
+	.topspacer {
+		height: 40px;
+	}
+}
+
+.logo {
+	width: 100%;
+	max-width: 560px;
+	/*height: 100px;*/
+	margin: 0 auto 45px;
+	padding: 0;
+	/*background: url(../img/header.png) bottom center no-repeat;*/
+	text-align: center;
+	cursor: pointer;
+	display: block;
+}
+
+	.logo img {
+		margin: 0 auto 0;
+		padding: 0;
+		width: 100%;
+	}
+	@media screen and (max-width: 740px) {
+		.logo {
+			margin-bottom: 0;
+		}
+	}
+
+.menu {
+	margin: 0 auto 50px;
+	padding: 0;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	border-top-color:    rgba(50, 62, 73, 0.1);
+	border-bottom-color: rgba(50, 62, 73, 0.1);
+	font-size: 11px;
+	line-height: 1;
+	background: white;
+}
+	.menu.fixie {
+		margin-bottom: 0;
+		position: fixed;
+		top: -1px;
+		left: 0;
+		right: 0;
+		z-index: 100000;
+	}
+	.menu .membrane {
+		text-align: left;
+		padding: 0 20px;
+		max-width: 710px;
+		margin: 0 auto 0;
+	}
+	.menu a.menuitem {
+		display: inline-block;
+		font-family: 'Lato', Verdana,sans-serif;
+		font-weight: 700;
+		line-height: 1;
+		cursor: pointer;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		text-decoration: none;
+		padding: 16px 38px 16px 0;
+		color: #323E49;
+		opacity: 0.5;
+	}
+	html.ie_lte8 .menu a.menuitem {
+		padding-right:  24px;
+	}
+	@media screen and (max-width: 740px) {
+		.menu {
+			margin-top: 0;
+		}
+		.menu .membrane {
+			text-align: center;
+		}
+		.menu a.menuitem {
+			font-size: 11px;
+			padding: 9px 10px;
+		}
+	}
+	.menu a.menuitem.last,
+	html.ie_lte8 .menu a.menuitem.last {
+		padding-right: 0;
+	}
+	.menu a.menuitem:hover {
+		opacity: 1;
+	}
+	body.page-home .menu a.menu-home,
+	body.page-questions .menu a.menu-questions,
+	body.page-briefs .menu a.menu-briefs,
+	body.page-decisions .menu a.menu-decisions,
+	body.page-contact .menu a.menu-contact {
+		color: #A05D1A;
+		opacity: 1;
+	}
+
+	
+
+
+.content {
+	text-align: left;
+	max-width: 710px;
+	padding: 0 20px;
+	margin: 0 auto 50px;
+}
+
+	.spacer,
+	hr {
+		margin: 72px auto;
+		max-width: 370px;
+		display:block;
+		border: none;
+		border-bottom: 1px solid #EFCAAB;
+		background: transparent;
+	}
+
+	.content a {
+		color: #A05D1A;
+		text-decoration: none;
+		border-bottom: 1px solid #A05D1A;
+		border-bottom: 1px solid rgba(160, 93, 26, 0.25);
+	}
+	
+	.content a:hover {
+		color: #323E49;
+		border-bottom: 1px solid #A05D1A;
+	}
+	
+	.content .portrait {
+		float: right;
+		margin-left: 25px;
+		margin-bottom: 25px;
+		margin-top: 8px;
+		max-width: 300px;
+	}
+	
+	.content #map_canvas a {
+		border: none !important;
+	}
+
+/*.map-canvas {
+	width: 50%; 
+	height: 250px; 
+	float: right; 
+	margin-top:12px; 
+	margin-left: 10%;
+}*/
+.map-canvas {
+	position: absolute;
+	width: 100%; 
+	left: 0; right: 0;
+	margin-top: -50px;
+	height: 300px;  
+}
+.map-info {
+	padding-top: 300px;
+}
+	.map-info .map-float {
+		width: 40%;
+		margin-right: 5%;
+		float: left;
+	}
+	.map-info .map-float + .map-float {
+		margin-left: 5%;
+		margin-right: 0;
+		text-align: right;
+	}
+
+.footer {
+	height: 100px;
+}
+
+
+/* page-specific stuff */
+.page-decisions .content p {
+	margin-bottom: 60px;
+}
+
+
+
+/* utilities */
+@media screen and (max-width: 500px) {
+	.hide-on-phone {
+		display: none;
+	}
+}
+
+.cufon-loading {
+	visibility: hidden !important;
+}
+
+.clear {
+	display: block;
+	clear: both;
+}
+
+
+.clearfix:before,
+.clearfix:after {
+    content: '';
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}

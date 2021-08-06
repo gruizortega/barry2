@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+
+<!--[if lt IE 7]>
+<html lang='en' class='ie_6 ie_lte8'></html><![endif]-->
+<!--[if IE 7]>
+<html lang='en' class='ie_7 ie_lte8'></html><![endif]-->
+<!--[if IE 8]>
+<html lang='en' class='ie_8 ie_lte8'></html><![endif]-->
+<!-- [if gt IE 8] <!-->
+<html lang='en'><!-- <![endif]-->
+
+
+<head>
+
+	<meta charset='utf-8' />
+	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
+	<meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' />
+
+	<meta name='description' content='Barry Wolf represents clients in civil appellate litigation. He has been practicing appellate law for over 20 years, and is certified as an appellate specialist by the California State Bar.' /> 
+	<meta name='keywords' content= 'barry, wolf, barry wolf, law, office, appellate, appeal, attorney, lawyer, california, la, los angeles' /> 
+	<meta name='google-site-verification' content='lQOasSeSdlpgSYN17l8B4R5dV0n_SdnJ1fHpIrHtvJM' />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:400,700italic,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel='stylesheet' href='{{ page.root_path }}/public/docs/css/screen.css' type='text/css' media='screen'>
+	<link rel='shortcut icon' href='{{ page.root_path }}/public/images/favicon.png'></link>
+
+	<title>{{ page.name }}{% if page.title %} &rsaquo; {{ page.title }}{% endif %}</title>
+
+	{% block extrahead %}
+	{% endblock %}
+
+</head>
+
+
+
+
+<body class='page-{{ page.page_class }}'>
+
+	
+	<span class='topspacer'></span>
+
+	<a class='logo' href='{{ page.root_path }}'>
+		<img src='{{ page.root_path }}/public/images/header-new.png' alt='Law Office of Barry M. Wolf'/>
+	</a>
+
+	<div class='menu js-menu'>
+		<div class='membrane'>
+			<a class='menu-home menuitem' href='{{ page.root_path }}'>Home</a>
+			{% for child in page.root %}
+				<a class='menu-{{ child.page_class }} menuitem {% if loop.last %}last{% endif %}' href='{{ child.url }}'>{{ child.title }}</a>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class='menu fixie js-fixie-menu' style='display: none'>
+		<div class='membrane'>
+			<a class='menu-home menuitem' href='{{ page.root_path }}'>Home</a>
+			{% for child in page.root %}
+				<a class='menu-{{ child.page_class }} menuitem {% if loop.last %}last{% endif %}' href='{{ child.url }}'>{{ child.title }}</a>
+			{% endfor %}
+		</div>
+	</div>
+	
+	<div class='content'>
+		{% block content %}
+			<!-- content loaded in here -->
+		{% endblock %}
+	</div>
+
+
+	<div class='footer'>
+	</div>
+
+
+	<script type='text/javascript' src='{{ page.root_path }}/public/docs/js/jquery-1.11.1.min.js'></script>
+	<script type='text/javascript' src='{{ page.root_path }}/public/docs/js/fixieheader.js'></script>
+
+	
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-18771663-1']); _gaq.push(['_trackPageview']);
+	
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	
+</body>
+	
+</html>
